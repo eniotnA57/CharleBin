@@ -60,7 +60,7 @@ class Configuration
             'compression'              => 'zlib',
         ),
         'expire' => array(
-            'default' => '1day',
+            'default' => '1year',
         ),
         'expire_options' => array(
             '5min'   => 300,
