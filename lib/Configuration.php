@@ -60,11 +60,7 @@ class Configuration
             'compression'              => 'zlib',
         ),
         'expire' => array(
-<<<<<<< HEAD
             'default' => '1year',
-=======
-            'default' => '1jour',
->>>>>>> nvl-branch
         ),
         'expire_options' => array(
             '5min'   => 300,
