@@ -36,28 +36,16 @@ class Configuration
      */
     private static $_defaults = array(
         'main' => array(
-            'name'                     => 'CharleBin',
-            'basepath'                 => '',
-            'discussion'               => true,
-            'opendiscussion'           => false,
-            'password'                 => true,
-            'fileupload'               => false,
-            'burnafterreadingselected' => false,
-            'defaultformatter'         => 'plaintext',
-            'syntaxhighlightingtheme'  => '',
-            'sizelimit'                => 10485760,
-            'template'                 => 'bootstrap',
-            'info'                     => 'More information on the <a href=\'https://privatebin.info/\'>project page</a>.',
-            'notice'                   => '',
-            'languageselection'        => false,
-            'fr'          => '',
-            'urlshortener'             => '',
-            'qrcode'                   => true,
-            'icon'                     => 'identicon',
-            'cspheader'                => 'default-src \'none\'; base-uri \'self\'; form-action \'none\'; manifest-src \'self\'; connect-src * blob:; script-src \'self\' \'unsafe-eval\'; style-src \'self\'; font-src \'self\'; frame-ancestors \'none\'; img-src \'self\' data: blob:; media-src blob:; object-src blob:; sandbox allow-same-origin allow-scripts allow-forms allow-popups allow-modals allow-downloads',
-            'zerobincompatibility'     => false,
-            'httpwarning'              => true,
-            'compression'              => 'zlib',
+            'name' => 'PrivateBin', 'basepath' => '', 'discussion' => true, 'opendiscussion' => false, 
+            'password' => true, 'fileupload' => false, 'burnafterreadingselected' => false, 'defaultformatter' 
+            => 'plaintext', 'syntaxhighlightingtheme' => '', 'sizelimit' => 10485760, 'template' => 'bootstrap', 
+            'info' => 'More information on the <a href=\'https://privatebin.info/\'>project page</a>.', 'notice' 
+            => '', 'languageselection' => false, 'fr' => '', 'urlshortener' => '', 'qrcode' => true, 'icon' => 
+            'identicon', 'cspheader' => 'default-src \'none\'; base-uri \'self\'; form-action \'none\'; 
+            manifest-src \'self\'; connect-src * blob:; script-src \'self\' \'unsafe-eval\'; style-src \'self\'; 
+            font-src \'self\'; frame-ancestors \'none\'; img-src \'self\' data: blob:; media-src blob:; 
+            object-src blob:; sandbox allow-same-origin allow-scripts allow-forms allow-popups allow-modals 
+            allow-downloads', 'zerobincompatibility' => false, 'httpwarning' => true, 'compression' => 'zlib',
         ),
         'expire' => array(
             'default' => '1year',
