@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PrivateBin
  *
@@ -36,11 +37,11 @@ class Configuration
      */
     private static $_defaults = array(
         'main' => array(
-            'name' => 'PrivateBin', 'basepath' => '', 'discussion' => true, 'opendiscussion' => false, 
-            'password' => true, 'fileupload' => false, 'burnafterreadingselected' => false, 'defaultformatter' 
-            => 'plaintext', 'syntaxhighlightingtheme' => '', 'sizelimit' => 10485760, 'template' => 'bootstrap', 
-            'info' => 'More information on the <a href=\'https://privatebin.info/\'>project page</a>.', 'notice' 
-            => '', 'languageselection' => false, 'fr' => '', 'urlshortener' => '', 'qrcode' => true, 'icon' => 
+            'name' => 'PrivateBin', 'basepath' => '', 'discussion' => true, 'opendiscussion' => false,
+            'password' => true, 'fileupload' => false, 'burnafterreadingselected' => false, 'defaultformatter'
+            => 'plaintext', 'syntaxhighlightingtheme' => '', 'sizelimit' => 10485760, 'template' => 'bootstrap',
+            'info' => 'More information on the <a href=\'https://privatebin.info/\'>project page</a>.', 'notice'
+            => '', 'languageselection' => false, 'fr' => '', 'urlshortener' => '', 'qrcode' => true, 'icon' =>
             'identicon', 'cspheader' => 'default-src \'none\'; base-uri \'self\'; form-action \'none\'; 
             manifest-src \'self\'; connect-src * blob:; script-src \'self\' \'unsafe-eval\'; style-src \'self\'; 
             font-src \'self\'; frame-ancestors \'none\'; img-src \'self\' data: blob:; media-src blob:; 
@@ -210,7 +211,8 @@ class Configuration
 
         // support for old config file format, before the fork was renamed and PSR-4 introduced
         $this->_configuration['model']['class'] = str_replace(
-            'zerobin_', 'privatebin_',
+            'zerobin_',
+            'privatebin_',
             $this->_configuration['model']['class']
         );
 

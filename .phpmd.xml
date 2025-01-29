@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset name="CustomPHPMD">
+    <description>Configuration simple pour PHP Mess Detector</description>
+
+    <!-- Activer les règles essentielles -->
+    <rule ref="cleancode"/>
+    <rule ref="codesize"/>
+    <rule ref="naming"/>
+
+    <!-- Exclure le dossier vendor -->
+    <exclude-pattern>vendor/*</exclude-pattern>
+</ruleset>
